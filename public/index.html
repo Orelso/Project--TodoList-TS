@@ -4,19 +4,23 @@
     <meta charset="utf-8" />
     <link rel="icon" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Web site created using create-snowpack-app" />
     <link rel="stylesheet" type="text/css" href="/index.css" />
-    <script type="module" src="dist/index.js"></script>
+    <script src="dist/index.js" type="module"></script>
 
     <title>Todo List Typescript</title>
+    <style>
+      #list{
+        list-style: none;
+        padding: 0;
+      }
+    </style>
   </head>
   <body>
-    <img id="img" src="/logo.svg" />
-    <canvas id="canvas"></canvas>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <!-- <img id="img" src="/logo.svg" /> -->
     <ul id="list"></ul>
-    <form id="new-task-form"></form>
-    <input type="button" id="new-task-title">
+    <form id="new-task-form">
+    <input type="text" id="new-task-title">
     <button type="submit">Add</button>
+  </form>
   </body>
 </html>
