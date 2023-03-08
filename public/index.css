@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300&display=swap');
+
 /* Center the contents of the body element */
 body {
   display: flex;
@@ -7,6 +9,11 @@ body {
   min-height: 100vh;
   margin: 0;
   background-color: orange;
+  font-family: 'Urbanist', sans-serif;
+}
+
+h1 {
+  font-size: 45px;
 }
 
 /* Style the todo list */
@@ -14,7 +21,7 @@ body {
   list-style: none;
   padding: 0;
   margin: 0;
-  border: 10px inset brown;
+  border: 5px inset brown;
   font-size: 40px;
 }
 
@@ -49,16 +56,28 @@ button[type='submit'] {
 }
 
 button[type='submit']:hover {
-  background-color: #0069d9;
+  background-color: #f2ab05;
 }
 
 button[type='submit']:active {
-  background-color: #0062cc;
+  background-color: #f2ab05;
 }
 
 button {
-  background: linear-gradient(90deg, #ff8c00, #ffd700);
+  background-color: orange;
   color: white;
   font-size: 18px;
   border: 1px;
+}
+
+@media only screen and (max-width: 600px) {
+  #list {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #new-task-form {
+    flex-direction: column;
+  }
 }

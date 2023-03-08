@@ -47,7 +47,7 @@ function addListItem(task: Task) {
   item.append(label);
 
   const deleteButton = document.createElement('button');
-  deleteButton.innerText = '🗑️';
+  deleteButton.innerText = '🚮';
   deleteButton.addEventListener('click', () => {
     const index = tasks.findIndex((t) => t.id === task.id);
     if (index !== -1) {
